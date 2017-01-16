@@ -1,0 +1,188 @@
+/*
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}   
+
+@import "compass/css3";
+
+*/
+
+.header{
+  display: block;
+  margin: auto;
+  height:150px;
+  display:flex;
+  flex-direction: row;
+}
+.headerlogo {
+  display:flex;
+  flex-direction: row;
+  margin: left;
+}
+
+.titlemovie{
+  dislay:flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.titleactor{
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.titlehomepage{
+  display:flex;
+  flex-direction:column;
+  margin: auto;
+}
+
+
+
+body {
+  max-width: 1000px;
+  margin: auto;
+  margin-top:0;
+  font-family: sans-serif;
+
+  /*following style applied background */
+  background: lightblue url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* list all div classes */
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  justify-content: space-between;
+  /*
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin:0;
+*/
+}
+
+
+
+/* can delete div before class ids */
+ #actor-gallery img {
+  display: flex;
+  flex-direction: column;
+  align-items: space around;
+	width: 200px;
+	max-height: 200px;
+	border: 2px solid;
+	object-fit: cover;
+	object-position: 0% 0%;
+	transition: 1s;
+	font-size: 0;
+	line-height: 0;
+  margin: auto;
+ 
+}
+ #movie-gallery img {
+	width: 200px;
+	max-height: 200px;
+	border: 2px solid;
+	object-fit: cover;
+	object-position: 0% 0%;
+	transition: 1s;
+	font-size: 0;
+	line-height: 0;
+  margin: auto;
+ 
+}
+
+.headerlogo img{
+  	width: 100px;
+	max-height: 100px;
+	border: none;
+	object-fit: cover;
+	object-position: 0% 0%;
+	transition: 1s;
+	font-size: 0;
+	line-height: 0;
+  margin: auto;
+}
+
+/* idea for positioning and sizing of pics found at http://thenewcode.com/968/A-CSS-Object-Fit-Gallery-Thumbnail-and-Full-Image-In-One-File  alsohttps://developer.mozilla.org/en-US/docs/Web/CSS/object-position */
+
+
+/* Interesting background format https://css-tricks.com/perfect-full-page-background-image/
+*/
+
+
+
+.header {
+  background: lightsteelblue;
+  margin:0;
+  
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: lightsteelblue;
+  margin:auto;
+  margin-top:-22px;
+}
+
+.main {
+  text-align: left;
+  background: lightgrey;
+  width: 50%;
+  margin:0px;
+  padding:5px;
+  
+}
+
+section.story {
+  max-height: 200px;
+  overflow: scroll;
+  color:lightgrey;
+}
+
+
+
+/* https://css-tricks.com/forums/topic/hide-vertical-scrollbar-but-still-scrollable/ 
+::-webkit-scrollbar {
+display: none;
+}   */
+
+
+.aside-left {
+  display: flex;
+  flex-direction: column;
+  background: steelblue;
+  width:25%;
+  padding: 5%;
+  
+}
+
+.aside-right {
+  display: flex;
+  flex-direction: column;
+  background: steelblue;
+  width:25%;
+  padding: 5%;
+  margin:auto;
+}
+
+li {
+  list-style: none;
+}
+
+figure {
+  margin: auto;
+}
