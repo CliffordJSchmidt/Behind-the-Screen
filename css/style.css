@@ -150,15 +150,16 @@ body {
 section.story {
   max-height: 200px;
   overflow: scroll;
-  color:lightgrey;
+  
 }
 
 
 
 /* https://css-tricks.com/forums/topic/hide-vertical-scrollbar-but-still-scrollable/ 
+*/
 ::-webkit-scrollbar {
 display: none;
-}   */
+}  
 
 
 .aside-left {
